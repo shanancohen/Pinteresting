@@ -76,5 +76,9 @@ Pinteresting::Application.configure do
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
+
+  #note set this to actual host name
+  # necessary for heroku
+  config.action_mailer.default_url_options = { :host => 'http://pinteresting-commits.herokuapp.com/' }
   config.log_formatter = ::Logger::Formatter.new
 end
