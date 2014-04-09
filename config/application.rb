@@ -23,5 +23,9 @@ module Pinteresting
 #required for heroku
 config.assets.initialize_on_precompile = false
 
+console do
+  ActiveRecord::Base.connection
+end
+
   end
 end
